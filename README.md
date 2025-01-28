@@ -238,7 +238,7 @@ module.exports = keys
 ```
 
 ## 📮 5. Probar desde POSTMAN
-* Puedes probar la generaciónd el formToken desde POSTMAN. Coloca la URL con el metodo POST con la ruta `/formToken`.
+* Puedes probar la generación del formToken desde POSTMAN. Coloca la URL con el metodo POST con la ruta `/formToken`.
   
  ```bash
 localhost:3000/formToken
