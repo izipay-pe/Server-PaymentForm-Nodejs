@@ -11,7 +11,7 @@
 🚀 [3. Ejecutar ejemplo](#-3-ejecutar-ejemplo)  
 🔗 [4. APIs](#4-APIs)  
 💻 [4.1. FormToken](#41-formtoken)  
-💳 [4.2. Validación de firma](#42-validacion-de-firma)  
+💳 [4.2. Validación de firma](#42-validaci%C3%B3n-de-firma)  
 📡 [4.3. IPN](#43-ipn)  
 📮 [5. Probar desde POSTMAN](#-5-probar-desde-postman)  
 📚 [6. Consideraciones](#-6-consideraciones)
