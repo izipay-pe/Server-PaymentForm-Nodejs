@@ -82,7 +82,7 @@ npm start
 - 💳  **Validacion de firma:** Se encarga de verificar la autenticidad de los datos.
 - 📩 ️ **IPN:** Comunicación de servidor a servidor. Envío de los datos del pago al servidor.
 
-## 💻 4.1. FormToken
+## 💻4.1. FormToken
 Para configurar la pasarela se necesita generar un formtoken. Se realizará una solicitud API REST a la api de creación de pagos:  `https://api.micuentaweb.pe/api-payment/V4/Charge/CreatePayment` con los datos de la compra para generar el formtoken. El servidor devuelve el formToken generado junto a la llave `publicKey` necesaria para desplegar la pasarela
 
 Podrás encontrarlo en el archivo `controllers/paidController.js`.
@@ -136,7 +136,7 @@ localhost:3000/formToken
 ```
 ℹ️ Para más información: [Formtoken](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/javascript/guide/embedded/formToken.html)
 
-## 💳 4.2. Validación de firma
+## 💳4.2. Validación de firma
 Se configura la función `checkHash` que realizará la validación de los datos recibidos por el servidor luego de realizar el pago mediante el parámetro `kr-answer` utilizando una clave de encriptación definida en `key`. Podrás encontrarlo en el archivo `controllers/paidController.js`.
 
 ```node
@@ -171,7 +171,7 @@ localhost:3000/validate
 
 ℹ️ Para más información: [Analizar resultado del pago](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/kb/payment_done.html)
 
-## 📩 4.3. IPN
+## 📩4.3. IPN
 La IPN es una notificación de servidor a servidor (servidor de Izipay hacia el servidor del comercio) que facilita información en tiempo real y de manera automática cuando se produce un evento, por ejemplo, al registrar una transacción.
 
 Se realiza la verificación de la firma utilizando la función `checkHash`. Para la validación de los datos recibidos a través de la IPN (back) se utiliza la clave `PASSWORD`. Se devuelve al servidor de izipay un mensaje confirmando el estado del pago.
