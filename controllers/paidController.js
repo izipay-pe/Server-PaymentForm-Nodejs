@@ -17,7 +17,7 @@ controller.home = (req, res) => {
     res.send('Servidor Node.js - Mi Cuenta Web en funcionamiento sin frontend');
 }
 
-controller.formToken = async (req, res) => {
+controller.formtoken = async (req, res) => {
   
   const { amount, currency, orderId, email, firstName, lastName, phoneNumber, identityType, identityCode, address, country, city, state, zipCode } = req.body;
 
