@@ -132,7 +132,7 @@ controller.formtoken = async (req, res) => {
 ```
 Podrás acceder a esta API a través:
 ```bash
-localhost:3000/formToken
+localhost:3000/formtoken
 ```
 ℹ️ Para más información: [Formtoken](https://secure.micuentaweb.pe/doc/es-PE/rest/V4.0/javascript/guide/embedded/formToken.html)
 
