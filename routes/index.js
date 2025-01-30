@@ -5,7 +5,7 @@ const checkoutController = require("../controllers/paidController");
 
 /* GET home page. */
 router.get('/', checkoutController.home);
-router.post('/formToken', checkoutController.formToken);
+router.post('/formtoken', checkoutController.formtoken);
 router.post('/validate', checkoutController.apiValidate);
 router.post('/ipn', checkoutController.ipn);
 
